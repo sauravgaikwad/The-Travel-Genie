@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jigya.travelgenie7.MainActivityN"
+    tools:showIn="@layout/app_bar_main_activity_n">
+
+    <Button
+        android:id="@+id/Bsetdest"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/BlocateMe"
+        android:layout_alignBottom="@+id/BlocateMe"
+        android:layout_marginEnd="34dp"
+        android:layout_toStartOf="@+id/BlocateMe"
+        android:drawableTop="@drawable/ic_map_location"
+        android:onClick="onDestClick"
+        android:text="DestAlert"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/BlocateMe"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="61dp"
+        android:layout_marginTop="134dp"
+        android:drawableTop="@drawable/ic_location"
+        android:onClick="onLocateClick"
+        android:text="Locate Me"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/Bdsp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/Bsetdest"
+        android:layout_below="@+id/Bsetdest"
+        android:layout_marginTop="110dp"
+        android:onClick="onDSPClick"
+        android:drawableTop="@drawable/ic_speed"
+        android:text="D,S,T" />
+
+    <Button
+        android:id="@+id/Back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/Bdsp"
+        android:layout_alignStart="@+id/BlocateMe"
+        android:drawableTop="@drawable/ic_feedback"
+        android:text="Home ACK" />
+
+</RelativeLayout>
